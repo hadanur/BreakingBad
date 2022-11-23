@@ -11,5 +11,5 @@ struct Character: Codable {
     let name: String
     let status: String
     let nickname: String
-    let img: String?
+    let img: String
 }

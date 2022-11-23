@@ -25,6 +25,7 @@
 		B75ED964292E75AB0022F0F3 /* CharactersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED963292E75AB0022F0F3 /* CharactersCollectionViewCell.swift */; };
 		B75ED967292E8BF20022F0F3 /* CharacterDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED966292E8BF20022F0F3 /* CharacterDetailsVC.swift */; };
 		B75ED969292E8BFD0022F0F3 /* CharacterDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED968292E8BFD0022F0F3 /* CharacterDetailsVM.swift */; };
+		B75ED96B292E8EBD0022F0F3 /* CharacterDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED96A292E8EBD0022F0F3 /* CharacterDetailsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		B75ED963292E75AB0022F0F3 /* CharactersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCollectionViewCell.swift; sourceTree = "<group>"; };
 		B75ED966292E8BF20022F0F3 /* CharacterDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsVC.swift; sourceTree = "<group>"; };
 		B75ED968292E8BFD0022F0F3 /* CharacterDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsVM.swift; sourceTree = "<group>"; };
+		B75ED96A292E8EBD0022F0F3 /* CharacterDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			children = (
 				B75ED966292E8BF20022F0F3 /* CharacterDetailsVC.swift */,
 				B75ED968292E8BFD0022F0F3 /* CharacterDetailsVM.swift */,
+				B75ED96A292E8EBD0022F0F3 /* CharacterDetailsTableViewCell.swift */,
 			);
 			path = CharacterDetails;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				B75ED95C292E6E500022F0F3 /* EpisodesTableViewCell.swift in Sources */,
 				B75ED94E292E63260022F0F3 /* UIViewController+Extensions.swift in Sources */,
 				B75ED95E292E6E590022F0F3 /* EpisodesVM.swift in Sources */,
+				B75ED96B292E8EBD0022F0F3 /* CharacterDetailsTableViewCell.swift in Sources */,
 				B75ED969292E8BFD0022F0F3 /* CharacterDetailsVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,6 +22,13 @@ class CharactersVC: UIViewController {
         viewModel.delegate = self
         viewModel.fetchCharacters()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toCharacterDetailsVC" {
+            let destinationVC = segue.destination as! CharacterDetailsVC
+            destinationVC.viewModel.selectedCharacter = viewModel.choosenCharacter
+        }
+    }
 }
 
 extension CharactersVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -34,7 +41,7 @@ extension CharactersVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharactersCollectionViewCell", for: indexPath) as! CharactersCollectionViewCell
         let data = viewModel.characters[indexPath.row]
-        cell.characterImageView.sd_setImage(with: URL(string: data.img!))
+        cell.characterImageView.sd_setImage(with: URL(string: data.img))
         return cell
     }
 
@@ -43,8 +50,8 @@ extension CharactersVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        performSegue(withIdentifier: "toCharacterDetails", sender: nil)
+        viewModel.choosenCharacter = viewModel.characters[indexPath.row]
+        performSegue(withIdentifier: "toCharacterDetailsVC", sender: nil)
     }
 }
 
