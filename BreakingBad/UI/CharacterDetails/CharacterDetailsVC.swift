@@ -34,7 +34,11 @@ extension CharacterDetailsVC: UITableViewDelegate, UITableViewDataSource {
         cell.nicknameLabel.text = viewModel.selectedCharacter.nickname
         cell.nameLabel.text = data?.name
         cell.statusLabel.text = data?.status
-        cell.characterDetailsImageView.sd_setImage(with: URL(string: data!.img))
+        if data?.img != nil {
+            cell.characterDetailsImageView.sd_setImage(with: URL(string: data!.img!))
+        } else {
+            cell.characterDetailsImageView.image = UIImage(named: "noImage")
+        }
         return cell
     }
 }

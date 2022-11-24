@@ -41,7 +41,11 @@ extension CharactersVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharactersCollectionViewCell", for: indexPath) as! CharactersCollectionViewCell
         let data = viewModel.characters[indexPath.row]
-        cell.characterImageView.sd_setImage(with: URL(string: data.img))
+        if data.img != nil {
+            cell.characterImageView.sd_setImage(with: URL(string: data.img!))
+        } else {
+            cell.characterImageView.image = UIImage(named: "noImage")
+        }
         return cell
     }
 

@@ -18,9 +18,6 @@
 		B75ED952292E63770022F0F3 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED951292E63770022F0F3 /* CharacterModel.swift */; };
 		B75ED955292E65510022F0F3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B75ED954292E65510022F0F3 /* SDWebImage */; };
 		B75ED957292E65510022F0F3 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B75ED956292E65510022F0F3 /* SDWebImageMapKit */; };
-		B75ED95A292E6E320022F0F3 /* EpisodesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED959292E6E320022F0F3 /* EpisodesVC.swift */; };
-		B75ED95C292E6E500022F0F3 /* EpisodesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED95B292E6E500022F0F3 /* EpisodesTableViewCell.swift */; };
-		B75ED95E292E6E590022F0F3 /* EpisodesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED95D292E6E590022F0F3 /* EpisodesVM.swift */; };
 		B75ED960292E71D10022F0F3 /* CharactersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED95F292E71D10022F0F3 /* CharactersVC.swift */; };
 		B75ED964292E75AB0022F0F3 /* CharactersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED963292E75AB0022F0F3 /* CharactersCollectionViewCell.swift */; };
 		B75ED967292E8BF20022F0F3 /* CharacterDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED966292E8BF20022F0F3 /* CharacterDetailsVC.swift */; };
@@ -40,9 +37,6 @@
 		B75ED94D292E63260022F0F3 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		B75ED94F292E63460022F0F3 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		B75ED951292E63770022F0F3 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
-		B75ED959292E6E320022F0F3 /* EpisodesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesVC.swift; sourceTree = "<group>"; };
-		B75ED95B292E6E500022F0F3 /* EpisodesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesTableViewCell.swift; sourceTree = "<group>"; };
-		B75ED95D292E6E590022F0F3 /* EpisodesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesVM.swift; sourceTree = "<group>"; };
 		B75ED95F292E71D10022F0F3 /* CharactersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersVC.swift; sourceTree = "<group>"; };
 		B75ED963292E75AB0022F0F3 /* CharactersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCollectionViewCell.swift; sourceTree = "<group>"; };
 		B75ED966292E8BF20022F0F3 /* CharacterDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsVC.swift; sourceTree = "<group>"; };
@@ -159,9 +153,6 @@
 		B75ED958292E6E170022F0F3 /* Episodes */ = {
 			isa = PBXGroup;
 			children = (
-				B75ED959292E6E320022F0F3 /* EpisodesVC.swift */,
-				B75ED95B292E6E500022F0F3 /* EpisodesTableViewCell.swift */,
-				B75ED95D292E6E590022F0F3 /* EpisodesVM.swift */,
 			);
 			path = Episodes;
 			sourceTree = "<group>";
@@ -256,16 +247,13 @@
 			files = (
 				B75ED945292E60320022F0F3 /* CharactersVM.swift in Sources */,
 				B75ED950292E63460022F0F3 /* Webservice.swift in Sources */,
-				B75ED95A292E6E320022F0F3 /* EpisodesVC.swift in Sources */,
 				B75ED967292E8BF20022F0F3 /* CharacterDetailsVC.swift in Sources */,
 				B75ED92B292E5F340022F0F3 /* AppDelegate.swift in Sources */,
 				B75ED964292E75AB0022F0F3 /* CharactersCollectionViewCell.swift in Sources */,
 				B75ED92D292E5F340022F0F3 /* SceneDelegate.swift in Sources */,
 				B75ED960292E71D10022F0F3 /* CharactersVC.swift in Sources */,
 				B75ED952292E63770022F0F3 /* CharacterModel.swift in Sources */,
-				B75ED95C292E6E500022F0F3 /* EpisodesTableViewCell.swift in Sources */,
 				B75ED94E292E63260022F0F3 /* UIViewController+Extensions.swift in Sources */,
-				B75ED95E292E6E590022F0F3 /* EpisodesVM.swift in Sources */,
 				B75ED96B292E8EBD0022F0F3 /* CharacterDetailsTableViewCell.swift in Sources */,
 				B75ED969292E8BFD0022F0F3 /* CharacterDetailsVM.swift in Sources */,
 			);

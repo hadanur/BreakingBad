@@ -21,9 +21,7 @@ class CharactersViewModel {
     func fetchCharacters() {
         service.downloadCharacters { result in
             if let result = result {
-                for character in result {
-                    self.characters.append(character)
-                }
+                self.characters = result
                     self.delegate?.fetchCharactersOnSuccess()
                 } else {
                     self.delegate?.fetchCharactersOnUnSuccess()
